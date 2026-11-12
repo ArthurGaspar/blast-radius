@@ -1,0 +1,757 @@
+{
+ "version": 1,
+ "severities": [
+  "none",
+  "low",
+  "medium",
+  "high",
+  "critical"
+ ],
+ "dangerLevels": [
+  {
+   "code": "clear",
+   "label": "Clear",
+   "min": 0
+  },
+  {
+   "code": "low",
+   "label": "Low",
+   "min": 0.1
+  },
+  {
+   "code": "elevated",
+   "label": "Elevated",
+   "min": 4
+  },
+  {
+   "code": "high",
+   "label": "High",
+   "min": 7
+  },
+  {
+   "code": "severe",
+   "label": "Severe",
+   "min": 9
+  }
+ ],
+ "products": [
+  {
+   "key": "ollama",
+   "name": "Ollama",
+   "category": "ai",
+   "description": "Local LLM runner and model server",
+   "ghsa": {
+    "ecosystem": "go",
+    "package": "github.com/ollama/ollama"
+   },
+   "cpe": {
+    "vendor": "ollama",
+    "product": "ollama"
+   }
+  },
+  {
+   "key": "ray",
+   "name": "Ray",
+   "category": "ai",
+   "description": "Distributed compute for training and serving",
+   "ghsa": {
+    "ecosystem": "pip",
+    "package": "ray"
+   },
+   "cpe": {
+    "vendor": "anyscale",
+    "product": "ray"
+   }
+  },
+  {
+   "key": "mlflow",
+   "name": "MLflow",
+   "category": "ai",
+   "description": "Experiment tracking and model registry",
+   "ghsa": {
+    "ecosystem": "pip",
+    "package": "mlflow"
+   },
+   "cpe": {
+    "vendor": "lfprojects",
+    "product": "mlflow"
+   }
+  },
+  {
+   "key": "langchain",
+   "name": "LangChain",
+   "category": "ai",
+   "description": "LLM application framework",
+   "ghsa": {
+    "ecosystem": "pip",
+    "package": "langchain"
+   },
+   "cpe": {
+    "vendor": "langchain",
+    "product": "langchain"
+   }
+  },
+  {
+   "key": "gradio",
+   "name": "Gradio",
+   "category": "ai",
+   "description": "Web UIs for models",
+   "ghsa": {
+    "ecosystem": "pip",
+    "package": "gradio"
+   },
+   "cpe": {
+    "vendor": "gradio_project",
+    "product": "gradio"
+   }
+  },
+  {
+   "key": "pytorch",
+   "name": "PyTorch",
+   "category": "ai",
+   "description": "Deep learning framework",
+   "ghsa": {
+    "ecosystem": "pip",
+    "package": "torch"
+   },
+   "cpe": {
+    "vendor": "linuxfoundation",
+    "product": "pytorch"
+   }
+  },
+  {
+   "key": "transformers",
+   "name": "Transformers",
+   "category": "ai",
+   "description": "Hugging Face model library",
+   "ghsa": {
+    "ecosystem": "pip",
+    "package": "transformers"
+   },
+   "cpe": {
+    "vendor": "huggingface",
+    "product": "transformers"
+   }
+  },
+  {
+   "key": "vllm",
+   "name": "vLLM",
+   "category": "ai",
+   "description": "High-throughput LLM inference server",
+   "ghsa": {
+    "ecosystem": "pip",
+    "package": "vllm"
+   },
+   "cpe": {
+    "vendor": "vllm",
+    "product": "vllm"
+   }
+  },
+  {
+   "key": "llama-index",
+   "name": "LlamaIndex",
+   "category": "ai",
+   "description": "Retrieval and agent framework",
+   "ghsa": {
+    "ecosystem": "pip",
+    "package": "llama-index"
+   },
+   "cpe": {
+    "vendor": "llamaindex",
+    "product": "llamaindex"
+   }
+  },
+  {
+   "key": "jupyter-server",
+   "name": "Jupyter Server",
+   "category": "ai",
+   "description": "Notebook server",
+   "ghsa": {
+    "ecosystem": "pip",
+    "package": "jupyter-server"
+   },
+   "cpe": {
+    "vendor": "jupyter",
+    "product": "jupyter_server"
+   }
+  },
+  {
+   "key": "openssh",
+   "name": "OpenSSH",
+   "category": "infra",
+   "description": "Remote shell server",
+   "cpe": {
+    "vendor": "openbsd",
+    "product": "openssh"
+   }
+  },
+  {
+   "key": "nginx",
+   "name": "nginx",
+   "category": "infra",
+   "description": "Web server and reverse proxy",
+   "cpe": {
+    "vendor": "f5",
+    "product": "nginx"
+   }
+  },
+  {
+   "key": "openssl",
+   "name": "OpenSSL",
+   "category": "infra",
+   "description": "TLS library",
+   "cpe": {
+    "vendor": "openssl",
+    "product": "openssl"
+   }
+  },
+  {
+   "key": "log4j",
+   "name": "Log4j",
+   "category": "infra",
+   "description": "Java logging library",
+   "ghsa": {
+    "ecosystem": "maven",
+    "package": "org.apache.logging.log4j:log4j-core"
+   },
+   "cpe": {
+    "vendor": "apache",
+    "product": "log4j"
+   }
+  },
+  {
+   "key": "kubernetes",
+   "name": "Kubernetes",
+   "category": "infra",
+   "description": "Container orchestration",
+   "ghsa": {
+    "ecosystem": "go",
+    "package": "k8s.io/kubernetes"
+   },
+   "cpe": {
+    "vendor": "kubernetes",
+    "product": "kubernetes"
+   }
+  }
+ ],
+ "sitePresets": [
+  {
+   "key": "sao-paulo",
+   "label": "São Paulo",
+   "country": "BR",
+   "lat": -23.55,
+   "lon": -46.63
+  },
+  {
+   "key": "ashburn",
+   "label": "Ashburn (us-east-1)",
+   "country": "US",
+   "lat": 39.04,
+   "lon": -77.49
+  },
+  {
+   "key": "oregon",
+   "label": "Boardman (us-west-2)",
+   "country": "US",
+   "lat": 45.84,
+   "lon": -119.7
+  },
+  {
+   "key": "toronto",
+   "label": "Toronto",
+   "country": "CA",
+   "lat": 43.65,
+   "lon": -79.38
+  },
+  {
+   "key": "mexico-city",
+   "label": "Mexico City",
+   "country": "MX",
+   "lat": 19.43,
+   "lon": -99.13
+  },
+  {
+   "key": "santiago",
+   "label": "Santiago",
+   "country": "CL",
+   "lat": -33.45,
+   "lon": -70.67
+  },
+  {
+   "key": "london",
+   "label": "London",
+   "country": "GB",
+   "lat": 51.51,
+   "lon": -0.13
+  },
+  {
+   "key": "dublin",
+   "label": "Dublin (eu-west-1)",
+   "country": "IE",
+   "lat": 53.35,
+   "lon": -6.26
+  },
+  {
+   "key": "frankfurt",
+   "label": "Frankfurt (eu-central-1)",
+   "country": "DE",
+   "lat": 50.11,
+   "lon": 8.68
+  },
+  {
+   "key": "eemshaven",
+   "label": "Eemshaven (europe-west4)",
+   "country": "NL",
+   "lat": 53.44,
+   "lon": 6.83
+  },
+  {
+   "key": "paris",
+   "label": "Paris",
+   "country": "FR",
+   "lat": 48.86,
+   "lon": 2.35
+  },
+  {
+   "key": "stockholm",
+   "label": "Stockholm",
+   "country": "SE",
+   "lat": 59.33,
+   "lon": 18.07
+  },
+  {
+   "key": "tel-aviv",
+   "label": "Tel Aviv",
+   "country": "IL",
+   "lat": 32.08,
+   "lon": 34.78
+  },
+  {
+   "key": "johannesburg",
+   "label": "Johannesburg",
+   "country": "ZA",
+   "lat": -26.2,
+   "lon": 28.05
+  },
+  {
+   "key": "mumbai",
+   "label": "Mumbai",
+   "country": "IN",
+   "lat": 19.08,
+   "lon": 72.88
+  },
+  {
+   "key": "bengaluru",
+   "label": "Bengaluru",
+   "country": "IN",
+   "lat": 12.97,
+   "lon": 77.59
+  },
+  {
+   "key": "singapore",
+   "label": "Singapore",
+   "country": "SG",
+   "lat": 1.35,
+   "lon": 103.82
+  },
+  {
+   "key": "tokyo",
+   "label": "Tokyo",
+   "country": "JP",
+   "lat": 35.68,
+   "lon": 139.69
+  },
+  {
+   "key": "seoul",
+   "label": "Seoul",
+   "country": "KR",
+   "lat": 37.57,
+   "lon": 126.98
+  },
+  {
+   "key": "sydney",
+   "label": "Sydney",
+   "country": "AU",
+   "lat": -33.87,
+   "lon": 151.21
+  },
+  {
+   "key": "us-east-2",
+   "label": "Columbus (us-east-2)",
+   "country": "US",
+   "lat": 39.96,
+   "lon": -83.0
+  },
+  {
+   "key": "us-west-1",
+   "label": "San Francisco (us-west-1)",
+   "country": "US",
+   "lat": 37.77,
+   "lon": -122.42
+  },
+  {
+   "key": "council-bluffs",
+   "label": "Council Bluffs (us-central1)",
+   "country": "US",
+   "lat": 41.26,
+   "lon": -95.86
+  },
+  {
+   "key": "dallas",
+   "label": "Dallas",
+   "country": "US",
+   "lat": 32.78,
+   "lon": -96.8
+  },
+  {
+   "key": "new-york",
+   "label": "New York",
+   "country": "US",
+   "lat": 40.71,
+   "lon": -74.01
+  },
+  {
+   "key": "chicago",
+   "label": "Chicago",
+   "country": "US",
+   "lat": 41.88,
+   "lon": -87.63
+  },
+  {
+   "key": "austin",
+   "label": "Austin",
+   "country": "US",
+   "lat": 30.27,
+   "lon": -97.74
+  },
+  {
+   "key": "seattle",
+   "label": "Seattle",
+   "country": "US",
+   "lat": 47.61,
+   "lon": -122.33
+  },
+  {
+   "key": "atlanta",
+   "label": "Atlanta",
+   "country": "US",
+   "lat": 33.75,
+   "lon": -84.39
+  },
+  {
+   "key": "miami",
+   "label": "Miami",
+   "country": "US",
+   "lat": 25.76,
+   "lon": -80.19
+  },
+  {
+   "key": "denver",
+   "label": "Denver",
+   "country": "US",
+   "lat": 39.74,
+   "lon": -104.99
+  },
+  {
+   "key": "montreal",
+   "label": "Montreal (ca-central-1)",
+   "country": "CA",
+   "lat": 45.5,
+   "lon": -73.57
+  },
+  {
+   "key": "vancouver",
+   "label": "Vancouver",
+   "country": "CA",
+   "lat": 49.28,
+   "lon": -123.12
+  },
+  {
+   "key": "queretaro",
+   "label": "Querétaro (mx-central-1)",
+   "country": "MX",
+   "lat": 20.59,
+   "lon": -100.39
+  },
+  {
+   "key": "bogota",
+   "label": "Bogotá",
+   "country": "CO",
+   "lat": 4.71,
+   "lon": -74.07
+  },
+  {
+   "key": "lima",
+   "label": "Lima",
+   "country": "PE",
+   "lat": -12.05,
+   "lon": -77.04
+  },
+  {
+   "key": "buenos-aires",
+   "label": "Buenos Aires",
+   "country": "AR",
+   "lat": -34.6,
+   "lon": -58.38
+  },
+  {
+   "key": "rio",
+   "label": "Rio de Janeiro",
+   "country": "BR",
+   "lat": -22.91,
+   "lon": -43.17
+  },
+  {
+   "key": "recife",
+   "label": "Recife",
+   "country": "BR",
+   "lat": -8.05,
+   "lon": -34.9
+  },
+  {
+   "key": "lisbon",
+   "label": "Lisbon",
+   "country": "PT",
+   "lat": 38.72,
+   "lon": -9.14
+  },
+  {
+   "key": "madrid",
+   "label": "Madrid (eu-south-2)",
+   "country": "ES",
+   "lat": 40.42,
+   "lon": -3.7
+  },
+  {
+   "key": "milan",
+   "label": "Milan (eu-south-1)",
+   "country": "IT",
+   "lat": 45.46,
+   "lon": 9.19
+  },
+  {
+   "key": "zurich",
+   "label": "Zurich (eu-central-2)",
+   "country": "CH",
+   "lat": 47.38,
+   "lon": 8.54
+  },
+  {
+   "key": "amsterdam",
+   "label": "Amsterdam",
+   "country": "NL",
+   "lat": 52.37,
+   "lon": 4.9
+  },
+  {
+   "key": "berlin",
+   "label": "Berlin",
+   "country": "DE",
+   "lat": 52.52,
+   "lon": 13.4
+  },
+  {
+   "key": "warsaw",
+   "label": "Warsaw",
+   "country": "PL",
+   "lat": 52.23,
+   "lon": 21.01
+  },
+  {
+   "key": "helsinki",
+   "label": "Helsinki (europe-north1)",
+   "country": "FI",
+   "lat": 60.17,
+   "lon": 24.94
+  },
+  {
+   "key": "oslo",
+   "label": "Oslo",
+   "country": "NO",
+   "lat": 59.91,
+   "lon": 10.75
+  },
+  {
+   "key": "vienna",
+   "label": "Vienna",
+   "country": "AT",
+   "lat": 48.21,
+   "lon": 16.37
+  },
+  {
+   "key": "istanbul",
+   "label": "Istanbul",
+   "country": "TR",
+   "lat": 41.01,
+   "lon": 28.98
+  },
+  {
+   "key": "athens",
+   "label": "Athens",
+   "country": "GR",
+   "lat": 37.98,
+   "lon": 23.73
+  },
+  {
+   "key": "cairo",
+   "label": "Cairo",
+   "country": "EG",
+   "lat": 30.04,
+   "lon": 31.24
+  },
+  {
+   "key": "lagos",
+   "label": "Lagos",
+   "country": "NG",
+   "lat": 6.52,
+   "lon": 3.38
+  },
+  {
+   "key": "nairobi",
+   "label": "Nairobi",
+   "country": "KE",
+   "lat": -1.29,
+   "lon": 36.82
+  },
+  {
+   "key": "cape-town",
+   "label": "Cape Town (af-south-1)",
+   "country": "ZA",
+   "lat": -33.92,
+   "lon": 18.42
+  },
+  {
+   "key": "bahrain",
+   "label": "Manama (me-south-1)",
+   "country": "BH",
+   "lat": 26.23,
+   "lon": 50.59
+  },
+  {
+   "key": "dubai",
+   "label": "Dubai (me-central-1)",
+   "country": "AE",
+   "lat": 25.2,
+   "lon": 55.27
+  },
+  {
+   "key": "riyadh",
+   "label": "Riyadh",
+   "country": "SA",
+   "lat": 24.71,
+   "lon": 46.68
+  },
+  {
+   "key": "hyderabad",
+   "label": "Hyderabad (ap-south-2)",
+   "country": "IN",
+   "lat": 17.39,
+   "lon": 78.49
+  },
+  {
+   "key": "delhi",
+   "label": "Delhi",
+   "country": "IN",
+   "lat": 28.61,
+   "lon": 77.21
+  },
+  {
+   "key": "jakarta",
+   "label": "Jakarta (ap-southeast-3)",
+   "country": "ID",
+   "lat": -6.21,
+   "lon": 106.85
+  },
+  {
+   "key": "kuala-lumpur",
+   "label": "Kuala Lumpur (ap-southeast-5)",
+   "country": "MY",
+   "lat": 3.14,
+   "lon": 101.69
+  },
+  {
+   "key": "bangkok",
+   "label": "Bangkok (ap-southeast-7)",
+   "country": "TH",
+   "lat": 13.76,
+   "lon": 100.5
+  },
+  {
+   "key": "manila",
+   "label": "Manila",
+   "country": "PH",
+   "lat": 14.6,
+   "lon": 120.98
+  },
+  {
+   "key": "ho-chi-minh",
+   "label": "Ho Chi Minh City",
+   "country": "VN",
+   "lat": 10.82,
+   "lon": 106.63
+  },
+  {
+   "key": "hong-kong",
+   "label": "Hong Kong (ap-east-1)",
+   "country": "HK",
+   "lat": 22.32,
+   "lon": 114.17
+  },
+  {
+   "key": "taipei",
+   "label": "Taipei (asia-east1)",
+   "country": "TW",
+   "lat": 25.03,
+   "lon": 121.57
+  },
+  {
+   "key": "osaka",
+   "label": "Osaka (ap-northeast-3)",
+   "country": "JP",
+   "lat": 34.69,
+   "lon": 135.5
+  },
+  {
+   "key": "melbourne",
+   "label": "Melbourne (ap-southeast-4)",
+   "country": "AU",
+   "lat": -37.81,
+   "lon": 144.96
+  },
+  {
+   "key": "perth",
+   "label": "Perth",
+   "country": "AU",
+   "lat": -31.95,
+   "lon": 115.86
+  },
+  {
+   "key": "auckland",
+   "label": "Auckland (ap-southeast-6)",
+   "country": "NZ",
+   "lat": -36.85,
+   "lon": 174.76
+  },
+  {
+   "key": "reykjavik",
+   "label": "Reykjavík",
+   "country": "IS",
+   "lat": 64.15,
+   "lon": -21.94
+  },
+  {
+   "key": "anchorage",
+   "label": "Anchorage",
+   "country": "US",
+   "lat": 61.22,
+   "lon": -149.9
+  },
+  {
+   "key": "honolulu",
+   "label": "Honolulu",
+   "country": "US",
+   "lat": 21.31,
+   "lon": -157.86
+  }
+ ]
+}

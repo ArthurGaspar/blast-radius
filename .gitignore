@@ -1,0 +1,10 @@
+api/**/bin/
+api/**/obj/
+api/**/*.db
+api/**/*.db-shm
+api/**/*.db-wal
+web/node_modules/
+web/dist/
+.vs/
+.idea/
+*.user

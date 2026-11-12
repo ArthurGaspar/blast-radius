@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BlastRadius.Api/BlastRadius.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BlastRadius.Tests/BlastRadius.Tests.csproj" />
+  </Folder>
+</Solution>
